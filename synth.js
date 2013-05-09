@@ -7,7 +7,7 @@ try{
 
 
 function Note(y){
-    var noteVal = dorian[y];
+    var noteVal = dorian[y]/2;
     var osc = setupSynth();
     osc.source.frequency.value=noteVal;
     osc.source.noteOn(0);

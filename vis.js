@@ -16,9 +16,9 @@ function bar(y) {
       .attr("y", (rangeVals-y-1)*size)
       .attr("width", w)
       .attr("height", size)
-      .style("fill", "#009DFF")
+      .style("fill", "#FF8000")
     .transition()
-      .duration(2000)
+      .duration(3000)
       .ease(Math.sqrt)
       .style("opacity", 1e-6)
       .remove();
