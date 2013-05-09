@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <div id="vis">
+        </div>
+    </body>
+
+    <script type="text/javascript" src="http://mbostock.github.com/d3/d3.js?1.25.0">
+        </script>
+
+    <script type="text/javascript">
+   var dorian=[
+        293.66,
+        329.63,
+        349.23,
+        392.00,
+        440.00,
+        493.88,
+        523.25,
+        587.33,
+        659.26,
+        698.46,
+        783.99,
+        880.00,
+        987.77,
+        1046.50,
+        1174.66];
+
+   var rangeVals = dorian.length;
+
+window.onload = function(){
+    setInterval(randomNote,300);
+
+
+    function randomNote(){
+        var num = Math.floor(rangeVals*Math.random());
+        bar(num);
+        Note(num);
+    }
+}
+    </script>
+
+ <script type="text/javascript" src="synth.js"></script>
+    <script type="text/javascript" src="vis.js"></script>
+
+</html>
